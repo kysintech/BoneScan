@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QProcess>
+#include <QString>
 
 class VideoPlayer : public QWidget
 {
