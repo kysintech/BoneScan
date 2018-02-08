@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/BoneScan">
+        <file>Resources/kysinlogo.bmp</file>
+    </qresource>
+</RCC>
