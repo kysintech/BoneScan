@@ -10,6 +10,7 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
     qDebug()<<"the class init successfully!";
     connect(this,SIGNAL(finish_scan(QString)),this,SLOT(print_scancode(QString)));
+
 }
 
 Widget::~Widget()
