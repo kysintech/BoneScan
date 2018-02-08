@@ -17,8 +17,15 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
+
 protected:
   void keyPressEvent(QKeyEvent *);
+
+public slots:
+  void print_scancode(QString );
+
+signals:
+  void finish_scan(QString );
 
 private:
     Ui::Widget *ui;

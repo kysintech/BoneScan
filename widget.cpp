@@ -9,6 +9,7 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     qDebug()<<"the class init successfully!";
+    connect(this,SIGNAL(finish_scan(QString)),this,SLOT(print_scancode(QString)));
 }
 
 Widget::~Widget()
@@ -26,7 +27,14 @@ void Widget::keyPressEvent(QKeyEvent *k_event)
     else
     {
         ui->label->setText(str);
+        emit finish_scan(str);
        str.clear();
     }
 
+
+}
+
+void Widget::print_scancode(QString st)
+{
+    qDebug()<<st;
 }
