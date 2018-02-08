@@ -2,6 +2,7 @@
 #define VIDEOPLAYER_H
 
 #include <QWidget>
+#include <QProcess>
 
 class VideoPlayer : public QWidget
 {
